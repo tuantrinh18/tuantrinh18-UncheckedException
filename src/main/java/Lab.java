@@ -1,5 +1,5 @@
 
-public class Lab {
+public class Lab extends RuntimeException{
     /**
      * This method must throw an unchecked exception.
      * unchecked means that you do not need to wrap the method in a try/catch or a throws declaration.
@@ -13,7 +13,13 @@ public class Lab {
      * Notice that errors are separate from exceptions. Errors are external to Java and can occur when some external
      * event happens, like running out of computer memory.
      */
-    public void throwUncheckedException(){
+
+     
+    public int throwUncheckedException ()
+    {
+        throw new Lab();
+        
 
     }
+    
 }
